@@ -18,6 +18,8 @@
 		C516C502215B5B860082C665 /* LYUserDefaults+LYProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C501215B5B860082C665 /* LYUserDefaults+LYProperties.m */; };
 		C516C506215B5D600082C665 /* IntroducePagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C505215B5D600082C665 /* IntroducePagesView.m */; };
 		C516C509215B5DE40082C665 /* IntroducePagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C508215B5DE40082C665 /* IntroducePagesHelper.m */; };
+		C516C50C215B7B0D0082C665 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C50B215B7B0D0082C665 /* BaseTableViewCell.m */; };
+		C516C50F215B7B1D0082C665 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C50E215B7B1D0082C665 /* BaseModel.m */; };
 		C54AFB8321536C2000180BF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AFB8221536C2000180BF0 /* AppDelegate.m */; };
 		C54AFB8621536C2000180BF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AFB8521536C2000180BF0 /* ViewController.m */; };
 		C54AFB8921536C2000180BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54AFB8721536C2000180BF0 /* Main.storyboard */; };
@@ -109,6 +111,10 @@
 		C516C505215B5D600082C665 /* IntroducePagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroducePagesView.m; sourceTree = "<group>"; };
 		C516C507215B5DE40082C665 /* IntroducePagesHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroducePagesHelper.h; sourceTree = "<group>"; };
 		C516C508215B5DE40082C665 /* IntroducePagesHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroducePagesHelper.m; sourceTree = "<group>"; };
+		C516C50A215B7B0D0082C665 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		C516C50B215B7B0D0082C665 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		C516C50D215B7B1D0082C665 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		C516C50E215B7B1D0082C665 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		C54AFB7E21536C2000180BF0 /* LYProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54AFB8121536C2000180BF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C54AFB8221536C2000180BF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -390,10 +396,14 @@
 		C579D9EE21549B29003FF97C /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				C579D9EF21549B53003FF97C /* LYNavigationController.h */,
-				C579D9F021549B53003FF97C /* LYNavigationController.m */,
 				C579D9F721549D71003FF97C /* BaseViewController.h */,
 				C579D9F821549D71003FF97C /* BaseViewController.m */,
+				C516C50A215B7B0D0082C665 /* BaseTableViewCell.h */,
+				C516C50B215B7B0D0082C665 /* BaseTableViewCell.m */,
+				C516C50D215B7B1D0082C665 /* BaseModel.h */,
+				C516C50E215B7B1D0082C665 /* BaseModel.m */,
+				C579D9EF21549B53003FF97C /* LYNavigationController.h */,
+				C579D9F021549B53003FF97C /* LYNavigationController.m */,
 				C579DA2D2154EA6D003FF97C /* TabBarControllerConfig.h */,
 				C579DA2E2154EA6D003FF97C /* TabBarControllerConfig.m */,
 				C579DA2A2154E9FC003FF97C /* CYLPlusButtonSubclass.h */,
@@ -782,7 +792,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C516C50F215B7B1D0082C665 /* BaseModel.m in Sources */,
 				C5A0199C215A39BC00B73DBE /* YYFPSLabel.m in Sources */,
+				C516C50C215B7B0D0082C665 /* BaseTableViewCell.m in Sources */,
 				C579D9F921549D71003FF97C /* BaseViewController.m in Sources */,
 				C579DA092154DCB7003FF97C /* NSObject+SXRuntime.m in Sources */,
 				C54AFBD621536EC500180BF0 /* LYMenuView.m in Sources */,
