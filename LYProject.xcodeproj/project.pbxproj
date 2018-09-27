@@ -74,6 +74,7 @@
 		C55E5894215C6AFC0056C6BE /* BaseCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E5893215C6AFC0056C6BE /* BaseCategoryViewController.m */; };
 		C55E5897215C6E700056C6BE /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E5896215C6E700056C6BE /* TitleViewController.m */; };
 		C55E589A215C76430056C6BE /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E5899215C76430056C6BE /* NumberViewController.m */; };
+		C55E589D215CBC130056C6BE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E589C215CBC130056C6BE /* LoginViewController.m */; };
 		C579D9F121549B53003FF97C /* LYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C579D9F021549B53003FF97C /* LYNavigationController.m */; };
 		C579D9F621549BA8003FF97C /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C579D9F521549BA8003FF97C /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C579D9F921549D71003FF97C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C579D9F821549D71003FF97C /* BaseViewController.m */; };
@@ -261,6 +262,8 @@
 		C55E5896215C6E700056C6BE /* TitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		C55E5898215C76430056C6BE /* NumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberViewController.h; sourceTree = "<group>"; };
 		C55E5899215C76430056C6BE /* NumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
+		C55E589B215CBC130056C6BE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C55E589C215CBC130056C6BE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C579D9EF21549B53003FF97C /* LYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNavigationController.h; sourceTree = "<group>"; };
 		C579D9F021549B53003FF97C /* LYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNavigationController.m; sourceTree = "<group>"; };
 		C579D9F421549BA8003FF97C /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
@@ -848,6 +851,8 @@
 				C516C4E7215B1E2B0082C665 /* MessageViewController.m */,
 				C516C4E9215B1E350082C665 /* MineViewController.h */,
 				C516C4EA215B1E350082C665 /* MineViewController.m */,
+				C55E589B215CBC130056C6BE /* LoginViewController.h */,
+				C55E589C215CBC130056C6BE /* LoginViewController.m */,
 				C55E5891215C6AC90056C6BE /* 导航菜单 */,
 			);
 			path = Classes;
@@ -1115,6 +1120,7 @@
 				C55E587E215C697C0056C6BE /* JXCategoryDotCellModel.m in Sources */,
 				C55E5873215C697C0056C6BE /* JXCategoryIndicatorLineView.m in Sources */,
 				C516C4E8215B1E2B0082C665 /* MessageViewController.m in Sources */,
+				C55E589D215CBC130056C6BE /* LoginViewController.m in Sources */,
 				C579DA252154E995003FF97C /* CYLTabBarController.m in Sources */,
 				C55E5880215C697C0056C6BE /* JXCategoryTitleImageCell.m in Sources */,
 				C516C4F4215B32750082C665 /* AdvertiseHelper.m in Sources */,
