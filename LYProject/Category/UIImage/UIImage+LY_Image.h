@@ -10,6 +10,6 @@
 
 @interface UIImage (LY_Image)
 
-
++ (UIImage *)imageWithColor:(UIColor *)color;
 
 @end

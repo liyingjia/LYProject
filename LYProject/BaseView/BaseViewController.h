@@ -34,6 +34,12 @@
 -(void)title_click_event:(UIView*_Nullable)sender;
 @end
 
+typedef NS_ENUM(NSUInteger, RouterActionStyle) {
+    RouterActionStylePush = 0,
+    RouterActionStylePresent,
+    RouterActionStyleChangeRoot,
+};
+
 @interface BaseViewController : UIViewController<BaseViewControllerDelegate,BaseViewControllerDataSource,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -43,6 +49,8 @@
 @property (nonatomic,assign) int pageNum;
 //请求数量
 @property (nonatomic,assign) int pageSize;
+
+@property(nonatomic, assign) RouterActionStyle routerActionStyle;
 
 /**
 *  增加下拉刷新控件
@@ -58,5 +66,7 @@
  *  加载数据
  */
 -(void)loadItems;
+
+-(void)loadBackBtn;
 
 @end

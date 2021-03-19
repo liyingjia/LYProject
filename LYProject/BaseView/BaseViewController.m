@@ -10,6 +10,7 @@
 #import <MJRefresh.h>
 #import "YYFPSLabel.h"
 
+
 #define KDEFALUT_PAGE_SIZE 20
 @interface BaseViewController ()
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
@@ -144,6 +145,14 @@
         self.navigationItem.leftBarButtonItem = item;
     }
     return isleft;
+}
+
+-(void)loadBackBtn{
+    [self addLeftBarButtonWithImage:[UIImage imageNamed:@"NavgationBar_blue_back"] action:@selector(backAction)];
+}
+
+-(void)backAction{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -- right_button

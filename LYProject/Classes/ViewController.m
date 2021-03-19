@@ -50,8 +50,9 @@
     [btn ly_setImagePosition:LYImagePositionBottom spaceing:5];
     [btn block:^(id sender) {
         //        [btn startTime:60 title:@"重新发送" waitTitle:@"s后重新获取"];
-        TestViewController *vc = [[TestViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+//        TestViewController *vc = [[TestViewController alloc]init];
+//        [self.navigationController pushViewController:vc animated:YES];
+        [Router routerTo:[NSString stringWithFormat:@"router://app/TestViewController?actionStyle=1"]];
         
     }];
     

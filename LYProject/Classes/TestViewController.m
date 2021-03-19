@@ -11,7 +11,7 @@
 #import "UUMarqueeView.h"
 
 
-@interface TestViewController ()
+@interface TestViewController ()<RouterProtocol>
 
 @end
 
@@ -27,6 +27,7 @@
     [self scrollLabel];
 }
 
+
 - (void)scrollLabel{
     SKAutoScrollLabel *leftLabel = [[SKAutoScrollLabel alloc]initWithFrame:CGRectMake(50, 100, Main_Screen_Width-200, 40)];
     [self.view addSubview:leftLabel];
@@ -38,7 +39,20 @@
     leftLabel.text = @"11111111  22222222  333333    4444444444     55555555     66666666";// 显示内容
 }
 
+#pragma mark - RouterProtocol
 
++ (NSString *)routerPath {
+    return [NSString stringWithFormat:@"app/%@",NSStringFromClass([self class])];
+}
+
++ (id)routerInstanceWithParam:(NSDictionary *)param {
+    TestViewController *vc = [[[self class] alloc] init];
+    NSString *actionStyle = [param objectForKey:@"actionStyle"];
+    if ([actionStyle isEqualToString:@"1"]) {
+        [vc loadBackBtn];
+    }
+    return vc;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

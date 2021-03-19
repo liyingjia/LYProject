@@ -35,7 +35,7 @@
 
 /** set default barBackgroundImage of UINavigationBar */
 /** warning: ly_setDefaultNavBarBackgroundImage is deprecated! place use lyCustomNavigationBar */
-//+ (void)ly_setDefaultNavBarBackgroundImage:(UIImage *)image;
++ (void)ly_setDefaultNavBarBackgroundImage:(UIImage *)image;
 
 /** set default tintColor of UINavigationBar */
 + (void)ly_setDefaultNavBarTintColor:(UIColor *)color;

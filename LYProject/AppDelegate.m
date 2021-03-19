@@ -16,8 +16,10 @@
 #import "LYUserDefaults.h"
 #import "LYUserDefaults+LYProperties.h"
 #import "IntroducePagesHelper.h"
+#import "Router.h"
+#import <WebKit/WebKit.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<RouterResultDelegate>
 
 @end
 
@@ -46,6 +48,8 @@
     
     //引导页
     [self setupIntroductoryPage];
+    //注册路由结果代理
+    [Router setRouterResultDeleget:self];
     
     //启动广告
     [self setupAdveriseView];
@@ -63,6 +67,7 @@
     [LYNavigationBar ly_setDefaultNavBarBarTintColor:[UIColor orangeColor]];
     // 设置导航栏所有按钮的默认颜色
     [LYNavigationBar ly_setDefaultNavBarTintColor:[UIColor whiteColor]];
+    [LYNavigationBar ly_setDefaultNavBarBackgroundImage:[UIImage imageWithColor:[UIColor orangeColor]]];
     // 设置导航栏标题默认颜色
     [LYNavigationBar ly_setDefaultNavBarTitleColor:[UIColor whiteColor]];
     // 统一设置状态栏样式
@@ -101,6 +106,45 @@
 - (void)pushToAd{
     
 }
+
+
+
+#pragma mark - RouterResultDelegate
+-(void)routerResult:(RouterModel *)model{
+    CYLTabBarController *tab = (CYLTabBarController *)self.window.rootViewController;
+    UINavigationController *nav = (UINavigationController *)tab.viewControllers.firstObject;
+    if (model.routerType == RouterTypeLocal) {
+        
+        NSInteger actionStyle = [[model.param objectForKey:@"actionStyle"]integerValue];
+        if ([model.controller respondsToSelector:@selector(setRouterActionStyle:)]) {
+            ((BaseViewController *)model.controller).routerActionStyle = actionStyle;
+        }
+        if (actionStyle == 0) {
+            if ([nav isKindOfClass:[UINavigationController class]]) {
+                [nav pushViewController:model.controller animated:YES];
+            }
+        }else if(actionStyle == 1){
+            LYNavigationController *navCon = [[LYNavigationController alloc]initWithRootViewController:model.controller];
+            if ([nav isKindOfClass:[UINavigationController class]]) {
+                if(@available(iOS 13.0,*)){
+                    navCon.modalPresentationStyle = UIModalPresentationFullScreen;
+                }
+                [nav.viewControllers.lastObject presentViewController:navCon animated:YES completion:nil];
+            }else{
+                if(@available(iOS 13.0,*)){
+                    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+                }
+                // 设置导航栏默认的背景颜色
+                  [nav presentViewController:model.controller animated:YES completion:nil];
+            }
+        }
+    }else if(model.routerType == RouterTypeWap){
+        NSInteger actionStyle = [[[Router parseParamFromUrl:model.url]objectForKey:@"actionStyle"]integerValue];
+        WKWebView *webController = [[WKWebView alloc]init];
+        [nav pushViewController:webController animated:YES];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
