@@ -24,7 +24,7 @@
 //    [self.view addSubview:self.tableView];
 //    [self addHeaderRefreshView];
 //    [self addFooterRefreshView];
-//    [self scrollLabel];
+    [self scrollLabel];
 }
 
 - (void)scrollLabel{

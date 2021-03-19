@@ -22,7 +22,9 @@
     // Do any additional setup after loading the view.
 //     self.navigationBar.hidden = YES;
      [self setupNavigationBar];
+    
 }
+
 
 
 //设置导航栏主题

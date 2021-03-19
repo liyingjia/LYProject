@@ -25,10 +25,10 @@
     return isIPhoneX;
 }
 + (CGFloat)navBarBottom {
-    return [self isIphoneX] ? 88 : 64;
+    return NavBarHeight;
 }
 + (CGFloat)tabBarHeight {
-    return [self isIphoneX] ? 83 : 49;
+    return TabBarHeight;
 }
 + (CGFloat)screenWidth {
     return [UIScreen mainScreen].bounds.size.width;

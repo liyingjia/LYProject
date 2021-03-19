@@ -21,10 +21,10 @@
 /**
  * MARK:- 不同屏幕尺寸字体适配（375，667是因为效果图为IPHONE6 如果不是则根据实际情况修改）
  */
-#define kScreenWidthRatio  (Main_Screen_Width / 375.0)
-#define kScreenHeightRatio (Main_Screen_Height / 667.0)
-#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
-#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define Main_Screen_WidthRatio  (Main_Screen_Width / 375.0)
+#define Main_Screen_HeightRatio (Main_Screen_Height / 667.0)
+#define AdaptedWidth(x)  ceilf((x) * Main_Screen_WidthRatio)
+#define AdaptedHeight(x) ceilf((x) * Main_Screen_HeightRatio)
 #define AdaptedFontSize(R)     CHINESE_FONT_LIGHT_NAME(AdaptedWidth(R))
 
 
@@ -45,12 +45,14 @@
 /**
  * MARK:- 导航栏高度 状态栏高度 底部tabbar高度 苹果X底部安全区高度
  */
-#define NavBarHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES) ? 88.0 : 64.0)
-#define StatusBarHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES) ? 44.0 : 20.0)
-#define TabBarHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES) ? 83.0 : 49.0)
-#define SafeTopSpace    ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES) ? 24.f : 0.f)
-#define TabBarSafeHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES) ? 34.0 : 0.0)
-// iPhone X
+#define NavBarHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES || IS_iphone12 == YES || IS_iphone12ProMax == YES) ? 44+phoneStatusHeight : 64.0)
+#define StatusBarHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES || IS_iphone12 == YES || IS_iphone12ProMax == YES) ? 44.0 : 20.0)
+#define TabBarHeight (((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES || IS_iphone12 == YES || IS_iphone12ProMax == YES) ? 83.0 : 49.0) ? 83.0 : 49.0)
+#define SafeTopSpace    ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES || IS_iphone12 == YES || IS_iphone12ProMax == YES) ? 24.f : 0.f)
+#define TabBarSafeHeight ((IS_iPhoneX == YES || IS_iphoneXR == YES || IS_iphoneXS == YES || IS_iphoneXS_Max == YES || IS_iphone12 == YES || IS_iphone12ProMax == YES) ? 34.0 : 0.0)
+
+
+//iPhone X
 #define  IS_iPhoneX ((Main_Screen_Width == 375.f && Main_Screen_Height == 812.f) ? YES : NO)
 // iPhone XR
 #define IS_iphoneXR ((Main_Screen_Width == 414.f && Main_Screen_Height == 896.f) ? YES : NO)
@@ -58,6 +60,21 @@
 #define IS_iphoneXS ((Main_Screen_Width == 562.5f && Main_Screen_Height == 1218.f) ? YES : NO)
 // iPhone XS-Max
 #define IS_iphoneXS_Max ((Main_Screen_Width == 621.f && Main_Screen_Height == 1344.f) ? YES : NO)
+// iPhone 12
+#define IS_iphone12 ((Main_Screen_Width == 390.f && Main_Screen_Height == 844.f) ? YES : NO)
+// iPhone 12ProMax
+#define IS_iphone12ProMax ((Main_Screen_Width == 428.f && Main_Screen_Height == 926.f) ? YES : NO)
+
+
+#define phoneStatusHeight \
+({CGFloat statusBarHeight = 0.0;\
+if (@available(iOS 13.0, *)) {\
+statusBarHeight = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;\
+} else { \
+statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;\
+}\
+(statusBarHeight);\
+})
 
 /**
  * MARK:- 颜色, 色值

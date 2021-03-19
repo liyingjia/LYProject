@@ -11,4 +11,7 @@ pod 'TZImagePickerController'
 pod 'Bugly'
 pod 'YYCache'
 pod 'YYText'
+pod 'TFPopup' # 通用弹出框架
+pod 'DZNEmptyDataSet' # 列表无数据提示
+pod 'BRPickerView'
 end

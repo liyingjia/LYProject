@@ -39,7 +39,7 @@
     [firstButton setImage:firstImage forState:UIControlStateNormal];
     [firstButton addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     firstButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    [firstButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 5 * kScreenWidth / 375.0)];
+    [firstButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 15 * kScreenWidth / 375.0)];
     
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:firstButton];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;

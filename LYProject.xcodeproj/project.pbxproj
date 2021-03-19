@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84EC9145260452920059D2BD /* QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC913D260452910059D2BD /* QRCodeScanLine@2x.png */; };
+		84EC9146260452920059D2BD /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC913E260452910059D2BD /* right@2x.png */; };
+		84EC9147260452920059D2BD /* photos_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC913F260452910059D2BD /* photos_icon@2x.png */; };
+		84EC9148260452920059D2BD /* scan_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC9140260452910059D2BD /* scan_back@2x.png */; };
+		84EC9149260452920059D2BD /* ScanBarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9142260452910059D2BD /* ScanBarInfo.m */; };
+		84EC914A260452920059D2BD /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9144260452920059D2BD /* ScanViewController.m */; };
+		84EC915D260459480059D2BD /* ZTNavigationMenu_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC9157260459470059D2BD /* ZTNavigationMenu_arrow@2x.png */; };
+		84EC915E260459480059D2BD /* ZTNavigationMenu_arrow@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC9158260459470059D2BD /* ZTNavigationMenu_arrow@3x.png.png */; };
+		84EC915F260459480059D2BD /* ZTMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC915A260459470059D2BD /* ZTMenuCell.m */; };
+		84EC9160260459480059D2BD /* ZTNavigationMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC915B260459470059D2BD /* ZTNavigationMenu.m */; };
 		867477508F9A949F85B95D64 /* libPods-LYProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00841BF23D5E4E9D4425B01A /* libPods-LYProject.a */; };
 		C516C4E8215B1E2B0082C665 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C4E7215B1E2B0082C665 /* MessageViewController.m */; };
 		C516C4EB215B1E350082C665 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C516C4EA215B1E350082C665 /* MineViewController.m */; };
@@ -123,6 +133,21 @@
 /* Begin PBXFileReference section */
 		00841BF23D5E4E9D4425B01A /* libPods-LYProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B25CD24C7E8C17F6685BF9 /* Pods-LYProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYProject/Pods-LYProject.release.xcconfig"; sourceTree = "<group>"; };
+		84EC913D260452910059D2BD /* QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
+		84EC913E260452910059D2BD /* right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right@2x.png"; sourceTree = "<group>"; };
+		84EC913F260452910059D2BD /* photos_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos_icon@2x.png"; sourceTree = "<group>"; };
+		84EC9140260452910059D2BD /* scan_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_back@2x.png"; sourceTree = "<group>"; };
+		84EC9141260452910059D2BD /* ScanBarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanBarInfo.h; sourceTree = "<group>"; };
+		84EC9142260452910059D2BD /* ScanBarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanBarInfo.m; sourceTree = "<group>"; };
+		84EC9143260452910059D2BD /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		84EC9144260452920059D2BD /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		84EC9156260459470059D2BD /* ZTNavigationMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTNavigationMenu.h; sourceTree = "<group>"; };
+		84EC9157260459470059D2BD /* ZTNavigationMenu_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZTNavigationMenu_arrow@2x.png"; sourceTree = "<group>"; };
+		84EC9158260459470059D2BD /* ZTNavigationMenu_arrow@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZTNavigationMenu_arrow@3x.png.png"; sourceTree = "<group>"; };
+		84EC9159260459470059D2BD /* ZTMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTMenuCell.h; sourceTree = "<group>"; };
+		84EC915A260459470059D2BD /* ZTMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTMenuCell.m; sourceTree = "<group>"; };
+		84EC915B260459470059D2BD /* ZTNavigationMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTNavigationMenu.m; sourceTree = "<group>"; };
+		84EC915C260459480059D2BD /* ZTPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTPrefixHeader.pch; sourceTree = "<group>"; };
 		8D9D907CB6D3A7EAD028DB55 /* Pods-LYProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYProject/Pods-LYProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C516C4E6215B1E2B0082C665 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		C516C4E7215B1E2B0082C665 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
@@ -355,6 +380,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		84EC913A260452620059D2BD /* FunctionModule */ = {
+			isa = PBXGroup;
+			children = (
+				84EC91552604592E0059D2BD /* 导航栏下拉 */,
+				84EC913B2604526B0059D2BD /* ScanModule */,
+			);
+			path = FunctionModule;
+			sourceTree = "<group>";
+		};
+		84EC913B2604526B0059D2BD /* ScanModule */ = {
+			isa = PBXGroup;
+			children = (
+				84EC913C260452910059D2BD /* Resource */,
+				84EC9141260452910059D2BD /* ScanBarInfo.h */,
+				84EC9142260452910059D2BD /* ScanBarInfo.m */,
+				84EC9143260452910059D2BD /* ScanViewController.h */,
+				84EC9144260452920059D2BD /* ScanViewController.m */,
+			);
+			path = ScanModule;
+			sourceTree = "<group>";
+		};
+		84EC913C260452910059D2BD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84EC913D260452910059D2BD /* QRCodeScanLine@2x.png */,
+				84EC913E260452910059D2BD /* right@2x.png */,
+				84EC913F260452910059D2BD /* photos_icon@2x.png */,
+				84EC9140260452910059D2BD /* scan_back@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84EC91552604592E0059D2BD /* 导航栏下拉 */ = {
+			isa = PBXGroup;
+			children = (
+				84EC9159260459470059D2BD /* ZTMenuCell.h */,
+				84EC915A260459470059D2BD /* ZTMenuCell.m */,
+				84EC9157260459470059D2BD /* ZTNavigationMenu_arrow@2x.png */,
+				84EC9158260459470059D2BD /* ZTNavigationMenu_arrow@3x.png.png */,
+				84EC9156260459470059D2BD /* ZTNavigationMenu.h */,
+				84EC915B260459470059D2BD /* ZTNavigationMenu.m */,
+				84EC915C260459480059D2BD /* ZTPrefixHeader.pch */,
+			);
+			path = "导航栏下拉";
+			sourceTree = "<group>";
+		};
 		A85766D3CD3F77B0D8E00352 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +506,7 @@
 			children = (
 				C54AFB8121536C2000180BF0 /* AppDelegate.h */,
 				C54AFB8221536C2000180BF0 /* AppDelegate.m */,
+				84EC913A260452620059D2BD /* FunctionModule */,
 				C5A0198D215A24EC00B73DBE /* Classes */,
 				C5A019802159DCE500B73DBE /* Tools */,
 				C579D9F221549B9A003FF97C /* ThirsParty */,
@@ -985,8 +1057,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54AFB8E21536C2200180BF0 /* LaunchScreen.storyboard in Resources */,
+				84EC9145260452920059D2BD /* QRCodeScanLine@2x.png in Resources */,
+				84EC915E260459480059D2BD /* ZTNavigationMenu_arrow@3x.png.png in Resources */,
+				84EC9147260452920059D2BD /* photos_icon@2x.png in Resources */,
+				84EC9148260452920059D2BD /* scan_back@2x.png in Resources */,
 				C54AFB8B21536C2200180BF0 /* Assets.xcassets in Resources */,
+				84EC9146260452920059D2BD /* right@2x.png in Resources */,
 				C54AFB8921536C2000180BF0 /* Main.storyboard in Resources */,
+				84EC915D260459480059D2BD /* ZTNavigationMenu_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,23 +1108,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LYProject/Pods-LYProject-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYProject/Pods-LYProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYProject/Pods-LYProject-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYProject/Pods-LYProject-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYProject/Pods-LYProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1057,6 +1128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C516C50F215B7B1D0082C665 /* BaseModel.m in Sources */,
+				84EC914A260452920059D2BD /* ScanViewController.m in Sources */,
 				C5A0199C215A39BC00B73DBE /* YYFPSLabel.m in Sources */,
 				C55E588B215C697C0056C6BE /* JXCategoryFactory.m in Sources */,
 				C516C50C215B7B0D0082C665 /* BaseTableViewCell.m in Sources */,
@@ -1066,6 +1138,7 @@
 				C5A0197F2159CD9800B73DBE /* SKAutoScrollLabel.m in Sources */,
 				C55E588F215C697C0056C6BE /* JXCategoryBaseCell.m in Sources */,
 				C55E5881215C697C0056C6BE /* JXCategoryTitleImageCellModel.m in Sources */,
+				84EC915F260459480059D2BD /* ZTMenuCell.m in Sources */,
 				C54AFBD221536EC500180BF0 /* UIView+LYSetShadow.m in Sources */,
 				C579DA112154E08D003FF97C /* UIColor+HEX.m in Sources */,
 				C55E5879215C697C0056C6BE /* JXCategoryIndicatorCellModel.m in Sources */,
@@ -1130,6 +1203,7 @@
 				C54AFBCF21536EC500180BF0 /* UIButton+Block.m in Sources */,
 				C579D9F621549BA8003FF97C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C55E587C215C697C0056C6BE /* JXCategoryDotCell.m in Sources */,
+				84EC9160260459480059D2BD /* ZTNavigationMenu.m in Sources */,
 				C55E5884215C697C0056C6BE /* JXCategoryTitleView.m in Sources */,
 				C579D9FC21549D9F003FF97C /* TestViewController.m in Sources */,
 				C54AFBDD2153750100180BF0 /* LYNetworkHelper.m in Sources */,
@@ -1140,6 +1214,7 @@
 				C579DA2C2154E9FC003FF97C /* CYLPlusButtonSubclass.m in Sources */,
 				C55E588C215C697C0056C6BE /* JXCategoryCollectionView.m in Sources */,
 				C54AFBD121536EC500180BF0 /* UIView+TapAction.m in Sources */,
+				84EC9149260452920059D2BD /* ScanBarInfo.m in Sources */,
 				C55E588E215C697C0056C6BE /* JXCategoryBaseView.m in Sources */,
 				C516C4EF215B2B900082C665 /* AdvertiseView.m in Sources */,
 				C54AFBD521536EC500180BF0 /* UIButton+LY_ImageLocation.m in Sources */,
@@ -1314,7 +1389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FFCWKEQ3LK;
+				DEVELOPMENT_TEAM = M98VYFZASK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LYProject/PrefixHeader.pch";
 				INFOPLIST_FILE = LYProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1334,7 +1409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FFCWKEQ3LK;
+				DEVELOPMENT_TEAM = M98VYFZASK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LYProject/PrefixHeader.pch";
 				INFOPLIST_FILE = LYProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

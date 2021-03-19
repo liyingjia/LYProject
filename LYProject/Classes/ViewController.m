@@ -29,7 +29,7 @@
     //    [self bezierPath];
     //    [self bezierCircle];
     //    [self bezierLine];
-    [self animationCircle];
+//    [self animationCircle];
     // 开启日志打印
     [LYNetworkHelper openLog];
     [self monitorNetworkStatus];
