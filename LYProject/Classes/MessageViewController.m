@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"消息";
-    
+    self.view.dk_backgroundColorPicker = DKColorPickerWithRGB(0xffffff,0x2A8DFF);
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

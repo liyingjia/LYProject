@@ -57,6 +57,9 @@
     [self adveriseClick];
     //避免崩溃---针对数组增加、查询、插入为空的统一处理，防止这类问题闪退的情况
     [SYSafeCategory callSafeCategory];
+    
+    
+    
     return YES;
 }
 

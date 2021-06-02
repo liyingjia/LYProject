@@ -236,7 +236,7 @@
 -(UITableView *)tableView{
     if (!_tableView) {
         CGRect rect = CGRectZero;
-        rect = CGRectMake(0, NavBarHeight, self.view.ly_width, self.view.ly_height-NavBarHeight);
+        rect = CGRectMake(0, NavBarHeight, self.view.tf_width, self.view.tf_height-NavBarHeight);
         
         _tableView = [[UITableView alloc] initWithFrame:rect style:UITableViewStylePlain];
         if (isIOS7) {

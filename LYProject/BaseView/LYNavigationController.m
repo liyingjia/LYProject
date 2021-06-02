@@ -82,7 +82,7 @@
         //        [button setTitle:@"返回" forState:UIControlStateNormal];
         [button setImage:[UIImage imageNamed:@"NavgationBar_blue_back"] forState:UIControlStateNormal];
         [button setImage: [UIImage imageNamed:@"NavgationBar_blue_back"] forState:UIControlStateHighlighted];
-        button.ly_size = CGSizeMake(44, 44);
+        button.tf_size = CGSizeMake(44, 44);
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];

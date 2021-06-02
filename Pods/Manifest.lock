@@ -27,6 +27,19 @@ PODS:
   - BRPickerView/StringPickerView (2.7.3):
     - BRPickerView/Base
   - Bugly (2.5.0)
+  - DKNightVersion (2.4.3):
+    - DKNightVersion/Core (= 2.4.3)
+    - DKNightVersion/CoreAnimation (= 2.4.3)
+    - DKNightVersion/UIKit (= 2.4.3)
+  - DKNightVersion/Core (2.4.3):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.3)
+    - DKNightVersion/Core/extobjc (= 2.4.3)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.4.3)
+  - DKNightVersion/Core/extobjc (2.4.3)
+  - DKNightVersion/CoreAnimation (2.4.3):
+    - DKNightVersion/Core
+  - DKNightVersion/UIKit (2.4.3):
+    - DKNightVersion/Core
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (6.1.1)
   - Masonry (1.1.0)
@@ -36,6 +49,7 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
+  - TFEasyCoder (1.6.8)
   - TFPopup (1.3.0)
   - TZImagePickerController (3.0.2)
   - YYCache (1.0.4)
@@ -45,6 +59,7 @@ DEPENDENCIES:
   - AFNetworking
   - BRPickerView
   - Bugly
+  - DKNightVersion
   - DZNEmptyDataSet
   - IQKeyboardManager
   - Masonry
@@ -52,6 +67,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
+  - TFEasyCoder
   - TFPopup
   - TZImagePickerController
   - YYCache
@@ -72,13 +88,16 @@ SPEC REPOS:
     - YYText
   trunk:
     - BRPickerView
+    - DKNightVersion
     - DZNEmptyDataSet
+    - TFEasyCoder
     - TFPopup
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -86,11 +105,12 @@ SPEC CHECKSUMS:
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TFEasyCoder: 47337f520d2cb22292e5cb9b5ccf01942ed853e8
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TZImagePickerController: c6736038f5016a8be14132fd07e4e92ce6496385
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: a0722a2f668fbba5d1765205fad32879a6979f68
+PODFILE CHECKSUM: 5bb683121fbb265480ce4227815fc217ebaada32
 
 COCOAPODS: 1.9.3
